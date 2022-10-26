@@ -22,12 +22,14 @@ public class PlayerController : MonoBehaviour
 
         // Player movement in the z(forward and backward) direction. Covers W, S, Up key, Down key
         movement.z = Input.GetAxisRaw("Vertical");
+
+        // Updates the player model
+        controller.SimpleMove(controller.center + movement * moveSpeed);
     }
 
     void FixedUpdate()
     {
         // Updates the player model
         //rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        controller.move(movement);
     }
 }
