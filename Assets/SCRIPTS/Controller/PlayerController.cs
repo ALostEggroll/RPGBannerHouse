@@ -7,34 +7,25 @@ using UnityEngine;
  */
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveSpeed = 5f;    // Move speed
+
+    public Rigidbody rb;    // Player model
+
+    Vector3 movement;   // Player movement in the world
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            // Player goes up
-            Debug.Log("Player is going up");
-        }
-        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            // Player goes left
-            Debug.Log("Player is going left");
-        }
-        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            // Player goes down
-            Debug.Log("Player is going down");
-        }
-        if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            // Player goes right
-            Debug.Log("Player is going right");
-        }
+        // Player movement in the x(left and right) direction. Covers A, D, Left key, Right key
+        movement.x = Input.GetAxisRaw("Horizontal");
+
+        // Player movement in the z(forward and backward) direction. Covers W, S, Up key, Down key
+        movement.z = Input.GetAxisRaw("Vertical");
+    }
+
+    void FixedUpdate()
+    {
+        // Updates the player model
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
