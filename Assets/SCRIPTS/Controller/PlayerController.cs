@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;    // Move speed
 
-    public Rigidbody rb;    // Player model
+    //public Rigidbody rb;    // Player model
+    public CharacterController controller;
 
     Vector3 movement;   // Player movement in the world
 
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Updates the player model
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        //rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        controller.move(movement);
     }
 }
