@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  controller: {fileID: 2493131975868421615}
+  controller: {fileID: 0}
 --- !u!143 &2493131975868421615
 CharacterController:
   m_ObjectHideFlags: 0
