@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -293,6 +293,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8385836491182413749, guid: 12659b1df5148ab4dbf436136b212571, type: 3}
+--- !u!4 &384258791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8350629182498376392, guid: eb5a2246f6aa12e4b8cee5f43e1251f8, type: 3}
+  m_PrefabInstance: {fileID: 983783873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &397888709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4649304590781711473, guid: 12659b1df5148ab4dbf436136b212571, type: 3}
@@ -401,15 +406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8350629182498376392, guid: eb5a2246f6aa12e4b8cee5f43e1251f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.9
+      value: 27.8
       objectReference: {fileID: 0}
     - target: {fileID: 8350629182498376392, guid: eb5a2246f6aa12e4b8cee5f43e1251f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.21
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8350629182498376392, guid: eb5a2246f6aa12e4b8cee5f43e1251f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.16
+      value: -61.1
       objectReference: {fileID: 0}
     - target: {fileID: 8350629182498376392, guid: eb5a2246f6aa12e4b8cee5f43e1251f8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -914,6 +919,7 @@ GameObject:
   - component: {fileID: 1857588767}
   - component: {fileID: 1857588766}
   - component: {fileID: 1857588765}
+  - component: {fileID: 1857588768}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -987,6 +993,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857588768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857588764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb26f033b3ff6004bb2d5899f09e6c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 384258791}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 2, z: -22}
 --- !u!1 &1914677052 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8654812043003470832, guid: 12659b1df5148ab4dbf436136b212571, type: 3}
