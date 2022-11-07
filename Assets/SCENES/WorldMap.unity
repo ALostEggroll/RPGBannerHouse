@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -599,8 +599,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1503893436}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 10, z: -22}
+  smoothSpeed: 1
+  offset: {x: 0, y: 15, z: -22}
 --- !u!224 &1927177176 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2302380704674241914, guid: 6ef1c2055321a534eb033ae1e09c2d23, type: 3}
