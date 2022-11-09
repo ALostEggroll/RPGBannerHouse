@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8350629182498376395}
-  m_LocalRotation: {x: -0.008247442, y: -0.048292883, z: -0.015729213, w: 0.99867535}
+  m_LocalRotation: {x: -0.008247999, y: -0.04829116, z: -0.015729545, w: 0.99867547}
   m_LocalPosition: {x: 2.4899998, y: -8.58, z: 25.17}
   m_LocalScale: {x: 7.645647, y: 7.645647, z: 7.645647}
   m_ConstrainProportionsScale: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67dc9c2a2be12e488b4f7332b3f5969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   controller: {fileID: 8968121995608191616}
   animator: {fileID: 8350629182498376394}
 --- !u!143 &8968121995608191616
@@ -135,8 +135,8 @@ CharacterController:
   serializedVersion: 2
   m_Height: 0.7710841
   m_Radius: 0.2469878
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_SlopeLimit: 75
+  m_StepOffset: 1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
