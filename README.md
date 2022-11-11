@@ -1,5 +1,5 @@
 # RPGBannerHouse
-<\br> Welcome to the new and improved RPG Banner House repo!! </br>
+Welcome to the new and improved RPG Banner House repo!! </br>
 This new and improved version of the original game's draft formerly known as Banner House, will contain a change in art work, screens, story board and characters. 
 This game is put together by students who're part of the Game Dev Club at San Jose State University (SJSU).
 Game is still going through its development phases and is intended to be played on a multi-platform scale. 
