@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 /*
  *  A class to be attached to the player object. Controls overworld player
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;    // Player model
     //public CharacterController controller;
     public Animator animator;
+    public NavMeshAgent agent;
 
     Vector3 movement;   // Player movement in the world
 
@@ -44,7 +46,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void FixedUpdate()
@@ -68,10 +71,11 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        movement.y = rb.velocity.y;
+        //movement.y = rb.velocity.y;
         // Updates the player model
         //rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        rb.velocity = new Vector3(movement.x * moveSpeed, movement.y, movement.z * moveSpeed);
+        //rb.velocity = new Vector3(movement.x * moveSpeed, movement.y, movement.z * moveSpeed);
+        agent.Move(movement);
     }
 
     // Controls flipping of character
