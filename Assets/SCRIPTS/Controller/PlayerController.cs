@@ -6,6 +6,7 @@ using UnityEngine.AI;
 /*
  *  A class to be attached to the player object. Controls overworld player
  */
+ [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;    // Move speed
