@@ -9,7 +9,7 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("GameStartScreen");
     }
     public void LoadCharacterCreation() {
-        SceneManager.LoadScene("CreateCharacter");
+        SceneManager.LoadScene("NewCreateCharacter");
     }
     public void LoadWorldMap() {
         SceneManager.LoadScene("WorldMap");
