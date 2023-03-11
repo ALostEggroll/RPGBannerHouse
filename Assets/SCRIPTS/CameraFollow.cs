@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
 
     public float smoothSpeed = 0.125f; // How quickly camera snaps to target
     public Vector3 offset; // Offest camera on all 3 axis
+    public Vector3 lookAtOffset = new Vector3(0, 10, 0);
 
     // Locks camera to target
     void FixedUpdate ()
@@ -19,6 +20,7 @@ public class CameraFollow : MonoBehaviour
         transform.position = smoothedPosition;
 
         // Camera always looks at player
-        transform.LookAt(target);
+        // Vector3 lookAtOffset = new Vector3(0, 10, 0);
+        transform.LookAt(target.position + lookAtOffset);
     }
 }
