@@ -14,4 +14,8 @@ public class SceneSwitcher : MonoBehaviour
     public void LoadWorldMap() {
         SceneManager.LoadScene("WorldMap");
     }
+
+    public void LoadCredits() {
+        SceneManager.LoadScene("CreditsScreen");
+    }
 }
