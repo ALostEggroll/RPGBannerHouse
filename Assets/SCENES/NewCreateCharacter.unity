@@ -384,6 +384,42 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 61282e2e39781eb4b85afbc2af97925d, type: 2}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8607837147597218911, guid: 61282e2e39781eb4b85afbc2af97925d, type: 2}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2504139716565191839, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4578076899724168061, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_GlobalFontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 61282e2e39781eb4b85afbc2af97925d, type: 2}
     - target: {fileID: 7903432926277081319, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -472,5 +508,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewCharacterScreenUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8891831706488354700, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 61282e2e39781eb4b85afbc2af97925d, type: 2}
+    - target: {fileID: 8891831706488354700, guid: 7647b93df60b63247857124aec5f7d38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8607837147597218911, guid: 61282e2e39781eb4b85afbc2af97925d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7647b93df60b63247857124aec5f7d38, type: 3}

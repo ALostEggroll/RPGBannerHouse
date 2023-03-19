@@ -376,6 +376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6850405258005536744, guid: 89a59e0f5f3398047af10356675d6110, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadCredits
+      objectReference: {fileID: 0}
     - target: {fileID: 6850405258005536745, guid: 89a59e0f5f3398047af10356675d6110, type: 3}
       propertyPath: m_Sprite
       value: 
