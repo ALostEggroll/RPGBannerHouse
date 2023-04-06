@@ -29,11 +29,11 @@ public class PlayerController : MonoBehaviour
         movement.z = Input.GetAxisRaw("Vertical");
 
         // Flip character
-        if (movement.x > 0 && !facingRight)
+        if (movement.x > 0 && facingRight)
         {
             Flip();
         }
-        if (movement.x < 0 && facingRight)
+        if (movement.x < 0 && !facingRight)
         {
             Flip();
         }
