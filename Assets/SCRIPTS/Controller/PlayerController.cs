@@ -10,18 +10,25 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;    // Player model
     public float moveSpeed;    // Move speed
     //public CharacterController controller;
-    //public Animator animator;
+    public Animator animator;
 
     bool facingRight = true;
     private Vector3 moveInput;   // Player movement in the world
+    // float horizontalMove = 0f;
+    // float verticalMove = 0f;
 
     // Update is called once per frame
     void Update()
     {
         // Player movement in the x(left and right) direction. Covers A, D, Left key, Right key
         moveInput.x = Input.GetAxisRaw("Horizontal");
+        //horizontalMove = moveInput.x;
+
         // Player movement in the z(forward and backward) direction. Covers W, S, Up key, Down key
         moveInput.z = Input.GetAxisRaw("Vertical");
+        //verticalMove = moveInput.z;
+        animator.SetFloat("speed", Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.z));
+        
         moveInput.Normalize();
 
         // Changes sprite based on speed moving horizontally
